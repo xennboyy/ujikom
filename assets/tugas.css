@@ -1,0 +1,195 @@
+/* Import Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url(../assets/image/stars.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #ffffff;
+    padding: 20px;
+}
+
+/* Header Daftar */
+.header-daftar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1e1e1e;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.judul-daftar {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+/* Tombol Edit & Hapus */
+.daftar-actions {
+    display: flex;
+    gap: 10px; /* Kasih jarak antar tombol */
+}
+
+.daftar-actions a {
+    text-decoration: none;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+.btn-edit {
+    background: #4e5051;
+}
+
+.btn-delete {
+    background:  #4e5051;
+}
+
+.daftar-actions a:hover {
+    opacity: 0.8;
+}
+
+/* Form Tambah Tugas */
+.form-container {
+    background: #1e1e1e;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.form-tugas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.form-tugas input,
+.form-tugas select {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #2b2b2b;
+    color: #fff;
+}
+
+.form-tugas button {
+    padding: 10px 15px;
+    background: #393b3a;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.form-tugas button:hover {
+    background: #232524;
+}
+
+/* Tabel Tugas */
+.table-container {
+    overflow-x: auto;
+}
+
+.tugas-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tugas-table th,
+.tugas-table td {
+    padding: 12px;
+    text-align: left;
+    background: #1e1e1e;
+}
+.tugas-table td {
+    border-left: 2px solid #333;
+    border-right: 2px solid #333;
+}
+
+/* Style baris terakhir biar gak ada border bawah */
+.tugas-table tr:last-child td {
+    border-bottom: 2px solid #444;
+}
+
+.tugas-table th {
+    background: #1e1e1e;
+    font-weight: 600;
+    border-bottom: 2px solid #444; /* Garis pemisah antar kolom */
+}
+
+.tugas-table tr:hover {
+    background: #292929;
+}
+
+/* Tombol Aksi Tugas */
+.task-actions a {
+    text-decoration: none;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 13px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.task-actions {
+    text-align: center;
+}
+
+.task-done {
+    background: #2ecc71;
+    color: #fff;
+    margin: 8px;
+
+}
+.task-undone {
+    background: #2ecc71;
+    color: #fff;
+    margin: 8px;
+
+}
+
+.task-delete {
+    background: #e74c3c;
+    color: #fff;
+    margin: 8px;
+}
+
+.task-edit {
+    background: #4e4b4b;
+    color: #fff;
+    margin: 8px;
+}
+
+.task-actions a:hover {
+    opacity: 0.8;
+}
+
+/* Tombol Kembali */
+.back-to-list {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background: #555;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.back-to-list:hover {
+    background: #777;
+}
+

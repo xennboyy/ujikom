@@ -1,0 +1,237 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Warna Utama */
+:root {
+    --bg-dark: #121212;
+    --bg-container: #1E1E1E;
+    --text-light: #F5F5F5;
+    --text-muted: #A0A0A0;
+    --shadow: rgba(0, 0, 0, 0.3);
+}
+
+/* Body */
+body {
+    background-image: url(../assets/image/stars.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--text-light);
+}
+
+/* Sidebar */
+.sidebar {
+    width: 260px;
+    height: 100vh;
+    background: var(--bg-container);
+    padding: 25px;
+    box-shadow: 2px 0 10px var(--shadow);
+    position: fixed;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Logo atau Judul */
+.sidebar h1 {
+    font-size: 26px;
+    font-weight: bold;
+    color: var(--text-light);
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 8px rgba(255, 255, 255, 0.1);
+    padding-bottom: 20px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    width: 100%;
+}
+
+/* Menu Sidebar */
+.sidebar ul {
+    list-style: none;
+    margin-top: 20px;
+    width: 100%;
+    padding: 0;
+}
+
+.sidebar ul li {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Button Sidebar */
+.sidebar ul li a {
+    color: var(--text-light);
+    text-decoration: none;
+    padding: 12px 20px;
+    display: block;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 400;
+    transition: 0.3s;
+    background: linear-gradient(to bottom, #252525, #363535);
+}
+
+.sidebar ul li a:hover {
+    background: rgba(255, 255, 255, 0.15);
+    transform: scale(1.05);
+}
+
+
+/* Navbar */
+.navbar {
+    height: 60px;
+    background: var(--bg-container);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    box-shadow: 0 4px 10px var(--shadow);
+    position: fixed;
+    top: 0;
+    left: 260px;
+    right: 0;
+}
+
+/* Navbar - Judul */
+.navbar h2 {
+    font-size: 22px;
+    font-weight: bold;
+    color: var(--text-light);
+    text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.1);
+}
+
+/* Navbar - Profile Dropdown */
+.user-dropdown {
+    position: relative;
+}
+
+.user-dropdown button {
+    background: none;
+    border: none;
+    color: var(--text-light);
+    font-size: 15px;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+    display: flex;
+    align-items: center;
+}
+
+.navbar .user-dropdown button:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Dropdown Arrow */
+.user-dropdown button::after {
+    content: "▼";
+    font-size: 10px;
+    margin-left: 4px;
+    transition: 0.3s;
+}
+
+/* Hover Dropdown */
+.user-dropdown button:hover {
+    background: rgba(255, 255, 255, 0.1);
+}
+
+/* Dropdown Menu */
+.dropdown-content {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    background: linear-gradient(to bottom, #252525, #363535);
+    box-shadow: 0px 5px 15px var(--shadow);
+    border-radius: 15px;
+    padding: 10px 0;
+    display: none;
+    width: 170px;
+    z-index: 100;
+}
+
+.dropdown-content a {
+    color: var(--text-light);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.dropdown-content a:hover {
+    background: rgba(56, 56, 56, 0.773);
+    border-radius: 15px;
+}
+
+/* Menampilkan Dropdown saat di klik */
+.user-dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Dashboard Container */
+.main-content {
+    margin-left: 280px;
+    margin-top: 80px;
+    padding: 30px;
+}
+
+/* Dashboard Cards */
+.dashboard-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.card {
+    background: linear-gradient(to bottom, #252525, #363535);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px var(--shadow);
+    text-align: center;
+    transition: 0.3s;
+}
+
+/* Hover Card */
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 6px 15px var(--shadow);
+}
+
+/* Card Title */
+.card h3 {
+    font-size: 15px;
+    color: var(--text-light);
+    font-weight: bold;
+}
+
+/* Card Angka */
+.card p {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--text-light);
+    margin-top: 10px;
+}
+
+/* Tombol */
+.btn {
+    background: rgba(255, 255, 255, 0.1);
+    color: var(--text-light);
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 8px;
+    display: inline-block;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}

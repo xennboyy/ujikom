@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(../assets/image/backgroundLogin.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.wrapper {
+    width: 400px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+}
+
+.wrapper h1 {
+    letter-spacing: 2px;
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #fff;
+    text-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.login-box {
+    position: relative;
+    margin: 20px 0;
+}
+
+.login-box input {
+    width: 100%;
+    padding: 15px 50px 15px 20px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    background: transparent;
+    color: #fff;
+    font-size: 14px;
+    outline: none;
+}
+
+.login-box input::placeholder {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.login-box i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+}
+
+.remember-me-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    color: rgba(255, 255, 255, 0.8);
+    margin: 10px 0;
+}
+
+.remember-me-link input {
+    accent-color: #fff;
+    margin-right: 5px;
+}
+
+.remember-me-link a {
+    color: rgba(255, 255, 255, 0.9);
+    text-decoration: none;
+}
+
+.remember-me-link a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 25px;
+    background-image: url(../assets/image/planet.jpg);
+    background-size: cover;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    box-shadow: 0px 0px 10px rgba(254, 254, 254, 0.8);
+    color: #fff;
+}
+
+.register-link {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.register-link a {
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.register-link a:hover {
+    text-decoration: underline;
+}

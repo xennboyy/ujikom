@@ -1,0 +1,55 @@
+/* Container utama */
+.main-contentt {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-image: url(../assets/image/bulanSabit.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Judul Halaman */
+.main-contentt h2 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+/* Tabel Data Profil */
+.main-contentt table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.main-contentt td {
+    padding: 10px;
+    font-size: 16px;
+    color: #ffffff;
+}
+
+/* Style untuk Button Logout */
+.btnn {
+    width: 200px;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-image: url(../assets/image/planet.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btnn:hover {
+    box-shadow: 0px 0px 10px rgba(254, 254, 254, 0.8);
+    color: #fff;
+}

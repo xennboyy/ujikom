@@ -1,0 +1,142 @@
+/* Warna Dasar */
+:root {
+    --bg-dark: #121212;
+    --bg-container: #1e1e1e;
+    --text-light: #f1f1f1;
+    --text-gray: #b3b3b3;
+    --gray-dark: #292929;
+    --gray-light: #3a3a3a;
+    --shadow: rgba(0, 0, 0, 0.3);
+}
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url(../assets/image/astronout.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--text-light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Container Utama */
+.container {
+    width: 500px;
+    background: transparent;
+    backdrop-filter: blur(30px);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 10px var(--shadow);
+    text-align: center;
+}
+
+/* Judul */
+.container h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Form Tambah Daftar */
+form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+form input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    background: black;
+    background-image: url(../assets/image/bulanSabit1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain; /* Menyesuaikan ukuran gambar */
+    background-position: right center; /* Menempatkan gambar di sebelah kanan tengah */
+    color: var(--text-light);
+}
+
+form button {
+    padding: 12px 18px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    box-shadow: 0px 0px 10px rgba(254, 254, 254, 0.8);
+    color: #fff;
+}
+
+/* List Daftar */
+ul {
+    list-style: none;
+    text-align: left;
+}
+
+ul li {
+    background: black;
+    background-image: url(../assets/image/bulanSabit1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain; /* Menyesuaikan ukuran gambar */
+    background-position: right center; /* Menempatkan gambar di sebelah kanan tengah */
+    padding: 12px;
+    border-radius: 6px;
+    margin-bottom: 10px;
+    transition: 0.3s;
+}
+
+
+ul li a {
+    text-decoration: none;
+    color: var(--text-light);
+    font-size: 18px;
+    display: block;
+    transition: 0.3s;
+}
+
+ul li:hover {
+    box-shadow: 0px 0px 10px rgba(254, 254, 254, 0.8);
+    color: #fff;
+}
+
+ul li a:hover {
+    color: white;
+}
+
+/* Tombol Dashboard */
+.dashboard-btn {
+    width: 100%;
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 18px;
+    background-image: url(../assets/image/planet.jpg);
+    background-size: cover;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.dashboard-btn:hover {
+    box-shadow: 0px 0px 10px rgba(254, 254, 254, 0.8);
+    color: #fff;
+}
